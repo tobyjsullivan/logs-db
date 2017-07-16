@@ -1,0 +1,9 @@
+version: '3'
+services:
+  logs-db:
+    build: .
+    volumes:
+    - ./migrations:/sql
+    environment:
+    - POSTGRES_PASSWORD=pass@123
+
